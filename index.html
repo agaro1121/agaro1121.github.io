@@ -33,35 +33,110 @@ Future is a Monad !
             <h4>A brief introduction</h4>
         </section>
         <section>
-            <div>
-                <p> Press Down </p>
-                <div>
-                    <pre>
-                        <code data-trim>
-                            def func(x: Int, y: Int): Int = x * y
-                            or
-                            def func(x: Int)(y: Int): Int = x * y
-                        </code>
-                    </pre>
-                </div>
-            </div>
-            <div class="fragment">
-                <p> You can do
-                <div><pre><code data-trim>
-                    def func(x: Int, y: Int): Int = x * y
-                    or
-                    def func(x: Int)(y: Int): Int = x * y
-                </code></pre>
-                </div>
-            </div>
+            <h1>What is Concurrency?</h1>
         </section>
-        <section data-markdown>
-            <script type="text/template">
-                ## Page title
+        <section>
+            <section>
+                <h1>Why do we need it?</h1>
+            </section>
+            <section>
+                <h1>Demonstration</h1>
+                <h3>I hope you brought your pillows...</h3>
+            </section>
+            <section>
+                <h3>I tried to warn you...</h3>
+            </section>
+        </section>
+        <section>
+            <section>
+                <h2>Some Prerequisites...</h2>
+                <h3>A function</h3>
+                <p>
+                    y = x * 2 + 1<br/>
+                    y = x * x * x
+                </p>
+                Yes. Just like math
+            </section>
+            <section data-markdown>
+                <script type="text/template">
+                    #Translate these over to scala...
+                    ```scala
+                    def timesTwoAddOne(x: Int): Int = x * 2 + 1
+                    def toThirdPower(x: Int) = x * x * x
+                    ```
+                </script>
+            </section>
+            <section data-markdown>
+                <script type="text/template">
+                    ## Higher Order Functions
+                    #### Functions that take other functions
+                    ```scala
+                    def higherOrderFunction(x:Int, f:(Int) => Int) = f(x)
+                    ```
+                </script>
+            </section>
+            <section data-markdown>
+                <script type="text/template">
+                    ## Higher Order Functions
+                    #### Functions that take other functions
+                    ```scala
+                    def timesTwoAddOne(x: Int): Int = x * 2 + 1
+                    def toThirdPower(x: Int) = x * x * x
+                    def higherOrderFunction(x:Int, f:(Int) => Int) = f(x)
 
-                A paragraph with some text and a [link](http://hakim.se).
-            </script>
+                    ```
+                    ###### Let's try it :-)
+                </script>
+            </section>
+            <section data-markdown>
+                <script type="text/template">
+                    ###### Now these 1 by 1
+                    ###### Can you guess the answers?
+                    ```scala
+                    higherOrderFunction(2,toThirdPower)
+                    higherOrderFunction(2,timesTwoAddOne)
+                    ```
+                </script>
+            </section>
         </section>
+        <section>
+            <section>
+                <h1>Monad</h1>
+            </section>
+            <section>
+                <h1>What is it?</h1>
+                <p>
+                    A construct that allows us to sequence actions.<br>
+                    A way to wrap stuff and operate on the stuff.
+                </p>
+            </section>
+            <section>
+                <h6>Sort of like a factory with an assembly line</h6>
+                <img src="assets/assembly_line.gif">
+            </section>
+            <section>
+                <h5>How do we sequence these operation?</h5>
+                <p class="fragment current-visible">You guessed it. Higher Order Functions :-)</p>
+            </section>
+            <section>
+                <h2>When do we use Monads?</h2>
+                <p class="fragment current-visible fade-up grow">ALL</p>
+                <p class="fragment current-visible fade-up grow">THE</p>
+                <p class="fragment current-visible fade-up grow">TIME</p>
+            </section>
+            <section>
+                <h2>Where do we use Monads?</h2>
+                <p class="fragment current-visible fade-up grow">EVERYWHERE</p>
+            </section>
+            <section>
+                <h2>Why do we use Monads?</h2>
+                <p class="fragment current-visible fade-up grow">PSYCH! LOL</p>
+                <p class="fragment fade-up">
+                    There is a very long mathematical explanation we are not getting into
+                </p>
+            </section>
+        </section>
+
         <section>
             <script type="text/template">
                 - Item 1 <!-- .element: class="fragment" data-fragment-index="2" -->
