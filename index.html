@@ -136,6 +136,108 @@ Future is a Monad !
                 <h4><span class="fragment highlight-red">There is a very long mathematical explanation we are not
                     getting into</span></h4>
             </section>
+            <section>
+                <h2>Ok on to the good stuff </h2>
+            </section>
+        </section>
+        <section>
+            <section>
+                <h1>Welcome to the Future</h1>
+            </section>
+            <section>
+                <h2>Future</h2>
+            </section>
+            <section>
+                <h1>What is it?</h1>
+                <p>
+                    Put simply, something that will happen in the future<br>
+                    You're literally working in the future
+                </p>
+            </section>
+            <section>
+                <h5>Why do we use futures?</h5>
+                <p>
+                    Tools to write asynchronous (awesome) non-blocking (more awesome) code
+                </p>
+            </section>
+            <section>
+                <h5>Did I mention Futures are Monads? :-)</h5>
+            </section>
+            <section data-markdown>
+                <script type="text/template">
+                    ###### Let's try some basics
+                    ```scala
+                    import scala.concurrent.{Future, Await}
+                    import scala.concurrent.duration._
+                    import scala.concurrent.ExecutionContext.Implicits.global
+
+                    val randomStuff = Future{
+                    println("Doing random stuff...")
+                    Thread.sleep(3000)
+                    "DONE DOING RANDOM STUFF!"
+                    }
+
+                    val doneWaiting = Await.ready(randomStuff,60 seconds)
+                    println(doneWaiting)
+
+                    ```
+                </script>
+            </section>
+            <section>
+                <h5>Wait! The code show's when it's done, but I don't see it?</h5>
+            </section>
+            <section data-markdown>
+                <script type="text/template">
+                    ###### Let's try some more basics
+                    ```scala
+                    import scala.concurrent.{Future, Await}
+                    import scala.concurrent.duration._
+                    import scala.concurrent.ExecutionContext.Implicits.global
+
+                    val randomStuff = Future{
+                    println("Doing random stuff...")
+                    Thread.sleep(7000)
+                    "DONE DOING RANDOM STUFF!"
+                    }
+
+                    val doneWaiting = Await.result(randomStuff,60 seconds)
+                    println(doneWaiting)
+
+                    ```
+                </script>
+            </section>
+            <section data-markdown>
+                <script type="text/template">
+                    ###### So in Summary...
+                    ```scala
+                    Await.ready()  //Signals when ready
+                    Await.result() //Returns result of computation
+                    ```
+                </script>
+            </section>
+        </section>
+        <section>
+            <section>
+                <h5>That was cool<br>But why did I have to wait ?</h5>
+            </section>
+            <section data-markdown>
+                <script type="text/template">
+                    ###### Well wait no more !
+                    ```scala
+                        onSuccess(..) //only runs when future is successful
+                        onFailure(..) //only runs when future fails
+                        onComplete(..) //covers both success and failure scenarios
+                    ```
+                </script>
+            </section>
+            <section>
+                <h5>Things to note</h5>
+                <p>
+                These combinators may not run on the same thread/time as the future<br>
+                If you have more than one, they will not run in the order they appear
+                </p>
+                <h6>Let's see an example...</h6>
+            </section>
         </section>
 
         <section>
