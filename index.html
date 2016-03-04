@@ -172,9 +172,9 @@ Future is a Monad !
                     import scala.concurrent.ExecutionContext.Implicits.global
 
                     val randomStuff = Future{
-                    println("Doing random stuff...")
-                    Thread.sleep(3000)
-                    "DONE DOING RANDOM STUFF!"
+                        println("Doing random stuff...")
+                        Thread.sleep(3000)
+                        "DONE DOING RANDOM STUFF!"
                     }
 
                     val doneWaiting = Await.ready(randomStuff,60 seconds)
@@ -184,7 +184,8 @@ Future is a Monad !
                 </script>
             </section>
             <section>
-                <h5>Wait! The code show's when it's done, but I don't see it?</h5>
+                <h5>Wait! The code shows it's done, but I don't see the result.<br>
+                    I only see....what is that?</h5>
             </section>
             <section data-markdown>
                 <script type="text/template">
@@ -195,9 +196,9 @@ Future is a Monad !
                     import scala.concurrent.ExecutionContext.Implicits.global
 
                     val randomStuff = Future{
-                    println("Doing random stuff...")
-                    Thread.sleep(7000)
-                    "DONE DOING RANDOM STUFF!"
+                        println("Doing random stuff...")
+                        Thread.sleep(7000)
+                        "DONE DOING RANDOM STUFF!"
                     }
 
                     val doneWaiting = Await.result(randomStuff,60 seconds)
@@ -208,10 +209,20 @@ Future is a Monad !
             </section>
             <section data-markdown>
                 <script type="text/template">
-                    ###### So in Summary...
+                    ###### Some specifics
                     ```scala
                     Await.ready()  //Signals when ready
                     Await.result() //Returns result of computation
+                    ```
+                </script>
+            </section>
+            <section data-markdown="">
+                <script type="text/template">
+                    ###### So in Summary...We have a microwave with no beep -_-
+                    ```scala
+                    val microwave = Future{ println("Heating up food..."); Thread.sleep(2000); "DONE!"}
+                    val result = Await.result(microwave,60 seconds)
+                    println(result)
                     ```
                 </script>
             </section>
@@ -219,27 +230,172 @@ Future is a Monad !
         <section>
             <section>
                 <h5>That was cool<br>But why did I have to wait ?</h5>
+                <p>
+                    Luckily Scala gives us tools so our futures can
+                    CALL US BACK when they're done
+                </p>
             </section>
             <section data-markdown>
                 <script type="text/template">
-                    ###### Well wait no more !
+                    ###### The Callbacks
                     ```scala
-                        onSuccess(..) //only runs when future is successful
-                        onFailure(..) //only runs when future fails
-                        onComplete(..) //covers both success and failure scenarios
+                    onSuccess(..) //only runs when future is successful
+                    onFailure(..) //only runs when future fails
+                    onComplete(..) //covers both success and failure scenarios
+                    ```
+                </script>
+            </section>
+            <section>
+                <h5>Let's see some examples</h5>
+            </section>
+            <section data-markdown>
+                <script type="text/template">
+                    #### Example 1
+                    ```scala
+                    import scala.concurrent.ExecutionContext.Implicits.global
+                    import scala.concurrent.Future
+
+                    val codes = Future{
+                        Thread.sleep(2000)
+                        "Cheats for Mortal Kombat Received!\n" +
+                        "Up, Up, Down, Down, Left, Right, A, B, A\n" +
+                        "Everyone wants kool stuff :-)"
+                    }
+
+                    codes onSuccess{
+                        case something => println(something)
+                    }
+                    ```
+                </script>
+            </section>
+            <section data-markdown>
+                <script type="text/template">
+                    #### Example 2
+                    ```scala
+                    val codes = Future{
+                        Thread.sleep(2000)
+                        "Cheats for Mortal Kombat Received!\n" +
+                        "Up, Up, Down, Down, Left, Right, A, B, A\n" +
+                        "Everyone wants kool stuff :-)"
+                        5/0
+                    }
+
+                    codes onFailure {
+                        case error => println("There was an error")
+                    }
+                    ```
+                </script>
+            </section>
+            <section data-markdown>
+                <script type="text/template">
+                    #### Example 3
+                    ```scala
+                    import scala.concurrent.ExecutionContext.Implicits.global
+                    import scala.concurrent.Future
+
+                    val codes = Future{
+                        Thread.sleep(2000)
+                        "Cheats for Mortal Kombat Received!\n" +
+                        "Up, Up, Down, Down, Left, Right, A, B, A\n" +
+                        "Everyone wants kool stuff :-)"
+                    }
+
+                    codes onComplete {
+                        case Success(something) => println(something)
+                        case Failure(error) => println("There was an error")
+                    }
                     ```
                 </script>
             </section>
             <section>
                 <h5>Things to note</h5>
                 <p>
-                These combinators may not run on the same thread/time as the future<br>
-                If you have more than one, they will not run in the order they appear
+                    These callbacks may not run on the same thread/time as the future<br>
+                    If you have more than one, they will not run in the order they appear
                 </p>
                 <h6>Let's see an example...</h6>
             </section>
-        </section>
+            <section data-markdown>
+                <script type="text/template">
+                    ```scala
+                    import scala.concurrent.ExecutionContext.Implicits.global
+                    import scala.concurrent.Future
 
+
+                    @volatile var totalA = 0
+                    val text = Future {
+                        "na" * 16 + "BATMAN!!!"
+                    }
+
+                    text onSuccess {
+                        case txt => totalA += txt.count(_ == 'a')
+                    }
+                    text onSuccess {
+                        case txt => totalA += txt.count(_ == 'A')
+                    }
+
+                    text onSuccess {
+                        case txt => Thread.sleep(800) ; println(s"\n$txt\nTotal = $totalA")
+                    }
+                    ```
+                </script>
+            </section>
+            <section>
+                <h5>
+                    Soooo what do you see?
+                </h5>
+            </section>
+            <section data-markdown>
+                <h5>Let's revisit our microwave :-) </h5>
+            </section>
+        </section>
+        <section>
+            <section>
+                <h1>Promises</h1>
+            </section>
+            <section>
+                <h1>What are they ?</h1>
+                <p>
+                    While futures are defined as a type of read-only placeholder object
+                    created for a result which does not yet exist, a promise can be thought
+                    of as a writable, single-assignment container, which completes a future
+                </p>
+            </section>
+            <section>
+                <h5>Basically...</h5>
+                <p>
+                    - A promise wraps a future<br>
+                    - You can complete a promise with a success or failure value<br>
+                    - You are only allowed to fulfull a promise ONCE
+                </p>
+            </section>
+            <section data-markdown=>
+                <script type="text/template">
+                    ###### Fun Fact: Futures and promises are implemented with the same object
+                    ###### Look:
+                    ```scala
+                    scala> val promise = Promise[Int]
+                    promise: scala.concurrent.Promise[Int] = scala.concurrent.impl.Promise$DefaultPromise@7b3300e5
+
+                    scala> val future = Future[Int](1)
+                    future: scala.concurrent.Future[Int] = scala.concurrent.impl.Promise$DefaultPromise@60d8c9b7
+                    ```
+                </script>
+            </section>
+            <section>
+                <h5>Yes it blew my mind as well</h5>
+            </section>
+            <section>
+                <h1>When do we use them? </h1>
+                <p>
+                    Not as often as futures
+                </p>
+            </section>
+            <section>
+                <h5>Let's see some code samples</h5>
+                <h5>I promise it will make sense</h5>
+            </section>
+        </section>
         <section>
             <script type="text/template">
                 - Item 1 <!-- .element: class="fragment" data-fragment-index="2" -->
