@@ -181,7 +181,7 @@ th {
 button, input[type="button"], input[type="reset"], input[type="submit"],
 .button {
   appearance: none;
-  background-color: #ff4081;
+  background-color: #ef5350;
   border: 0;
   border-radius: 3px;
   color: #fff;
@@ -203,7 +203,7 @@ button, input[type="button"], input[type="reset"], input[type="submit"],
   button:hover, button:focus, input[type="button"]:hover, input[type="button"]:focus, input[type="reset"]:hover, input[type="reset"]:focus, input[type="submit"]:hover, input[type="submit"]:focus,
   .button:hover,
   .button:focus {
-    background-color: #cc3367;
+    background-color: #bf4240;
     color: #fff; }
   button:disabled, input[type="button"]:disabled, input[type="reset"]:disabled, input[type="submit"]:disabled,
   .button:disabled {
@@ -211,7 +211,7 @@ button, input[type="button"], input[type="reset"], input[type="submit"],
     opacity: 0.5; }
     button:disabled:hover, input[type="button"]:disabled:hover, input[type="reset"]:disabled:hover, input[type="submit"]:disabled:hover,
     .button:disabled:hover {
-      background-color: #ff4081; }
+      background-color: #ef5350; }
   button.button-ghost, input[type="button"].button-ghost, input[type="reset"].button-ghost, input[type="submit"].button-ghost,
   .button.button-ghost {
     background-color: transparent;
@@ -261,8 +261,8 @@ select[multiple=multiple] {
     border-color: #b8b8b8; }
   input[type="color"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="email"]:focus, input[type="month"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="time"]:focus, input[type="url"]:focus, input[type="week"]:focus, input:not([type]):focus, textarea:focus,
   select[multiple=multiple]:focus {
-    border-color: #ff4081;
-    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06), 0 0 5px rgba(255, 39, 112, 0.7);
+    border-color: #ef5350;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06), 0 0 5px rgba(237, 60, 57, 0.7);
     outline: none; }
   input[type="color"]:disabled, input[type="date"]:disabled, input[type="datetime"]:disabled, input[type="datetime-local"]:disabled, input[type="email"]:disabled, input[type="month"]:disabled, input[type="number"]:disabled, input[type="password"]:disabled, input[type="search"]:disabled, input[type="tel"]:disabled, input[type="text"]:disabled, input[type="time"]:disabled, input[type="url"]:disabled, input[type="week"]:disabled, input:not([type]):disabled, textarea:disabled,
   select[multiple=multiple]:disabled {
@@ -381,12 +381,12 @@ p {
   margin: 0 0 1em; }
 
 a {
-  color: #ff4081;
+  color: #ef5350;
   text-decoration: underline;
   transition: color 150ms ease; }
   a:active, a:focus, a:hover {
     text-decoration: none;
-    color: #bf3061; }
+    color: #b33e3c; }
 
 input, button, select, textarea {
   font-family: inherit;
@@ -464,7 +464,7 @@ body.home-intro {
   padding: 0 2em;
   text-align: center;
   color: #d9d9d9;
-  background: #ff216d;
+  background: #ec3734;
   overflow: hidden; }
 
 .intro-in {
@@ -518,7 +518,7 @@ body.home-intro {
   top: 20px;
   height: 54px;
   width: 54px;
-  background-color: #ff4081;
+  background-color: #ef5350;
   border-radius: 50%;
   /* image replacement */
   overflow: hidden;
@@ -692,7 +692,7 @@ body.home-intro {
     margin-bottom: 1.7em;
     font-size: 1.3rem;
     font-weight: 800;
-    color: #ff2770;
+    color: #ed3c39;
     text-transform: uppercase; }
     .navbar h2::after {
       content: '';
@@ -766,7 +766,7 @@ body.navigation-is-open .menu-burger {
     .post-meta a:hover,
     .post-meta a:focus,
     .post-meta a:active {
-      color: #ff4081; }
+      color: #ef5350; }
       .post-title a:hover:after, .post-title a:focus:after, .post-title a:active:after,
       .post-meta a:hover:after,
       .post-meta a:focus:after,
