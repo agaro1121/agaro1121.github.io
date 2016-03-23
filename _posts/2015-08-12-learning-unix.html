@@ -1,0 +1,108 @@
+---
+layout: post
+title: The tar Command
+date: '2015-08-12T08:17:00.003-07:00'
+author: Anthony Garo
+tags:
+- Unix
+- WhatILearnedToday
+- Code
+modified_time: '2015-08-17T04:53:59.439-07:00'
+blogger_id: tag:blogger.com,1999:blog-4180298707082402742.post-2829987774162831427
+blogger_orig_url: http://scarrediron.blogspot.com/2015/08/learning-unix.html
+---
+
+<div dir="ltr">Every day I like to learn something new, whether it's big or small. Sometimes I take time to "relearn"
+    something and understand it in different, simpler ways so I don't have to remember the small details. You'd be
+    surprised how much faster those small details come back when you know how everything fits together.
+</div>
+<div dir="ltr">
+    <div>&nbsp;</div>
+    <div dir="ltr">On to what I learned !<br/>
+        <div>Lately I've been experimenting with Linux(again). I installed an Ubunto Distro onto my rig and have been
+            learning the command line bit by bit.
+        </div>
+        <div dir="ltr">
+            <div>&nbsp;</div>
+            <h4 dir="ltr">The tar command</h4>
+            <div dir="ltr">I've been using this command for years but had to google the syntax every single time.</div>
+            <div dir="ltr">That ends today !!!</div>
+            <div dir="ltr">What is tar?</div>
+            <div dir="ltr">&nbsp;&nbsp;&nbsp; -It basically zips/unzips files.</div>
+            <div dir="ltr">How to use it?</div>
+            <div dir="ltr">&nbsp;&nbsp;&nbsp; - code example: <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -tar [put
+                flags here] [newZipFileName.tgz] [directory to zip up]<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                -tar [put flags here] [newZipFileName.tgz]
+            </div>
+            <div dir="ltr"><strong>Small things to know:</strong></div>
+            <div dir="ltr">&nbsp;&nbsp;&nbsp; -tar has a few flags you always use:</div>
+            <ul>
+                <li>
+                    <div><strong>x</strong> - extract files</div>
+                </li>
+                <li><strong>c</strong> - create archive</li>
+                <li><strong>t</strong> - list files</li>
+                <li><strong>v</strong> - verbose (list files as it processes them)...shows you what's happening live
+                </li>
+                <li><strong>j</strong> - use bz2 compression</li>
+                <li><strong>z</strong> - use gz compression</li>
+                <li><strong>f</strong> - read or write files to disk</li>
+            </ul>
+            <div>&nbsp;<strong>How to remember the small things?</strong></div>
+            <div>&nbsp;&nbsp;&nbsp; -You always use the same flags to zip/unzip files except for one flag.</div>
+            <div><br/></div>
+            <div>Look at your keyboard. You have z,x,c,v,f in a nice L shape for you. Why did I have you do this?
+                Because your tar command looks like this:
+            </div>
+            <div><br/></div>
+            <div>Zip:</div>
+            <div><span
+                    style="font-family: &quot;Courier New&quot;, Courier, monospace;">&nbsp; &nbsp; -tar c<strong>zvf</strong> ...</span>
+            </div>
+            <div>Unzip:</div>
+            <div><span
+                    style="font-family: &quot;Courier New&quot;, Courier, monospace;">&nbsp; &nbsp; -tar x<strong>zvf</strong> ...</span>
+            </div>
+            <div><br/></div>
+            <div>As I promised same exact command except for the first flag z/x or <strong><span
+                    style="font-size: large;">c</span></strong>reate/e<strong><span
+                    style="font-size: large;">x</span></strong>tract LOL
+            </div>
+            <div><br/></div>
+            <div>The z flag is interchangeable with the j flag depending on the type of compression you're working
+                with.
+            </div>
+            <div><br/></div>
+            <div style="font-family: sans-serif;">Zip:</div>
+            <div style="font-family: sans-serif;"><span
+                    style="font-family: &quot;Courier New&quot;, Courier, monospace;">&nbsp; &nbsp; -tar c<strong>jvf</strong> ...</span>
+            </div>
+            <div style="font-family: sans-serif;">Unzip:</div>
+            <div style="font-family: sans-serif;"><span
+                    style="font-family: &quot;Courier New&quot;, Courier, monospace;">&nbsp; &nbsp; -tar x<strong>jvf</strong> ...</span>
+            </div>
+            <div style="font-family: sans-serif;"><br/></div>
+            <div style="font-family: sans-serif;"><br/></div>
+            <div style="font-family: sans-serif;"><strong>Code Samples:</strong></div>
+            <div style="font-family: sans-serif;"><span
+                    style="font-family: &quot;Courier New&quot;, Courier, monospace;">&nbsp;&nbsp;&nbsp; -tar c<strong>z</strong>vf testZipFile.<strong>tar.gz</strong>&nbsp; myDir/</span>
+            </div>
+            <div style="font-family: sans-serif;"><span
+                    style="font-family: &quot;Courier New&quot;, Courier, monospace;">&nbsp;&nbsp;&nbsp; -tar x<strong>z</strong>vf testZipFile.<strong>tar.gz</strong></span>
+            </div>
+            <div style="font-family: sans-serif;"><span
+                    style="font-family: &quot;Courier New&quot;, Courier, monospace;">&nbsp;&nbsp;&nbsp; -tar c<strong>j</strong>vf testZipFile.<strong>tar.bz2</strong> myDir/</span>
+            </div>
+            <div style="font-family: sans-serif;"><span
+                    style="font-family: &quot;Courier New&quot;, Courier, monospace;">&nbsp;&nbsp;&nbsp; -tar x<strong>j</strong>vf testZipFile.<strong>tar.bz2</strong></span>
+            </div>
+            <strong><span style="font-family: Courier New;"><br/></span></strong><br/><strong><span
+                style="font-family: inherit;">BTW: To simply view what's in your compressed file</span></strong><br/>
+            <div style="font-family: sans-serif;"><span style="font-family: Courier New;"><strong>
+                &nbsp;&nbsp;&nbsp; </strong>-tar t<strong>z</strong>vf testZipFile.<strong>tar.gz</strong></span></div>
+            <div style="font-family: sans-serif;"><span style="font-family: Courier New;"><strong>
+                &nbsp;&nbsp;&nbsp; </strong>-tar t<strong>j</strong>vf testZipFile.<strong>tar.bz2</strong></span></div>
+            <div style="font-family: sans-serif;"><br/></div>
+        </div>
+    </div>
+</div>
