@@ -6,8 +6,8 @@
 </description>
     <link>http://yourdomain.com/</link>
     <atom:link href="http://yourdomain.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 22 Mar 2016 20:11:10 -0400</pubDate>
-    <lastBuildDate>Tue, 22 Mar 2016 20:11:10 -0400</lastBuildDate>
+    <pubDate>Tue, 22 Mar 2016 21:11:14 -0400</pubDate>
+    <lastBuildDate>Tue, 22 Mar 2016 21:11:14 -0400</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
@@ -25,7 +25,6 @@
 &lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints &amp;#39;Hi, Tom&amp;#39; to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Check out the &lt;a href=&quot;http://jekyllrb.com/docs/home&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://talk.jekyllrb.com/&quot;&gt;Jekyll Talk&lt;/a&gt;.&lt;/p&gt;
-
 </description>
         <pubDate>Mon, 14 Mar 2016 22:52:51 -0400</pubDate>
         <link>http://yourdomain.com/jekyll/update/2016/03/14/welcome-to-jekyll.html</link>
@@ -273,103 +272,70 @@
     
       <item>
         <title>The tar Command</title>
-        <description>&lt;div dir=&quot;ltr&quot;&gt;Every day I like to learn something new, whether it&#39;s big or small. Sometimes I take time to &quot;relearn&quot;
-    something and understand it in different, simpler ways so I don&#39;t have to remember the small details. You&#39;d be
-    surprised how much faster those small details come back when you know how everything fits together.
-&lt;/div&gt;
-&lt;div dir=&quot;ltr&quot;&gt;
-    &lt;div&gt;&amp;nbsp;&lt;/div&gt;
-    &lt;div dir=&quot;ltr&quot;&gt;On to what I learned !&lt;br/&gt;
-        &lt;div&gt;Lately I&#39;ve been experimenting with Linux(again). I installed an Ubunto Distro onto my rig and have been
-            learning the command line bit by bit.
-        &lt;/div&gt;
-        &lt;div dir=&quot;ltr&quot;&gt;
-            &lt;div&gt;&amp;nbsp;&lt;/div&gt;
-            &lt;h4 dir=&quot;ltr&quot;&gt;The tar command&lt;/h4&gt;
-            &lt;div dir=&quot;ltr&quot;&gt;I&#39;ve been using this command for years but had to google the syntax every single time.&lt;/div&gt;
-            &lt;div dir=&quot;ltr&quot;&gt;That ends today !!!&lt;/div&gt;
-            &lt;div dir=&quot;ltr&quot;&gt;What is tar?&lt;/div&gt;
-            &lt;div dir=&quot;ltr&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp; -It basically zips/unzips files.&lt;/div&gt;
-            &lt;div dir=&quot;ltr&quot;&gt;How to use it?&lt;/div&gt;
-            &lt;div dir=&quot;ltr&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp; - code example: &lt;br/&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; -tar [put
-                flags here] [newZipFileName.tgz] [directory to zip up]&lt;br/&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
-                -tar [put flags here] [newZipFileName.tgz]
-            &lt;/div&gt;
-            &lt;div dir=&quot;ltr&quot;&gt;&lt;strong&gt;Small things to know:&lt;/strong&gt;&lt;/div&gt;
-            &lt;div dir=&quot;ltr&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp; -tar has a few flags you always use:&lt;/div&gt;
-            &lt;ul&gt;
-                &lt;li&gt;
-                    &lt;div&gt;&lt;strong&gt;x&lt;/strong&gt; - extract files&lt;/div&gt;
-                &lt;/li&gt;
-                &lt;li&gt;&lt;strong&gt;c&lt;/strong&gt; - create archive&lt;/li&gt;
-                &lt;li&gt;&lt;strong&gt;t&lt;/strong&gt; - list files&lt;/li&gt;
-                &lt;li&gt;&lt;strong&gt;v&lt;/strong&gt; - verbose (list files as it processes them)...shows you what&#39;s happening live
-                &lt;/li&gt;
-                &lt;li&gt;&lt;strong&gt;j&lt;/strong&gt; - use bz2 compression&lt;/li&gt;
-                &lt;li&gt;&lt;strong&gt;z&lt;/strong&gt; - use gz compression&lt;/li&gt;
-                &lt;li&gt;&lt;strong&gt;f&lt;/strong&gt; - read or write files to disk&lt;/li&gt;
-            &lt;/ul&gt;
-            &lt;div&gt;&amp;nbsp;&lt;strong&gt;How to remember the small things?&lt;/strong&gt;&lt;/div&gt;
-            &lt;div&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp; -You always use the same flags to zip/unzip files except for one flag.&lt;/div&gt;
-            &lt;div&gt;&lt;br/&gt;&lt;/div&gt;
-            &lt;div&gt;Look at your keyboard. You have z,x,c,v,f in a nice L shape for you. Why did I have you do this?
-                Because your tar command looks like this:
-            &lt;/div&gt;
-            &lt;div&gt;&lt;br/&gt;&lt;/div&gt;
-            &lt;div&gt;Zip:&lt;/div&gt;
-            &lt;div&gt;&lt;span
-                    style=&quot;font-family: &amp;quot;Courier New&amp;quot;, Courier, monospace;&quot;&gt;&amp;nbsp; &amp;nbsp; -tar c&lt;strong&gt;zvf&lt;/strong&gt; ...&lt;/span&gt;
-            &lt;/div&gt;
-            &lt;div&gt;Unzip:&lt;/div&gt;
-            &lt;div&gt;&lt;span
-                    style=&quot;font-family: &amp;quot;Courier New&amp;quot;, Courier, monospace;&quot;&gt;&amp;nbsp; &amp;nbsp; -tar x&lt;strong&gt;zvf&lt;/strong&gt; ...&lt;/span&gt;
-            &lt;/div&gt;
-            &lt;div&gt;&lt;br/&gt;&lt;/div&gt;
-            &lt;div&gt;As I promised same exact command except for the first flag z/x or &lt;strong&gt;&lt;span
-                    style=&quot;font-size: large;&quot;&gt;c&lt;/span&gt;&lt;/strong&gt;reate/e&lt;strong&gt;&lt;span
-                    style=&quot;font-size: large;&quot;&gt;x&lt;/span&gt;&lt;/strong&gt;tract LOL
-            &lt;/div&gt;
-            &lt;div&gt;&lt;br/&gt;&lt;/div&gt;
-            &lt;div&gt;The z flag is interchangeable with the j flag depending on the type of compression you&#39;re working
-                with.
-            &lt;/div&gt;
-            &lt;div&gt;&lt;br/&gt;&lt;/div&gt;
-            &lt;div style=&quot;font-family: sans-serif;&quot;&gt;Zip:&lt;/div&gt;
-            &lt;div style=&quot;font-family: sans-serif;&quot;&gt;&lt;span
-                    style=&quot;font-family: &amp;quot;Courier New&amp;quot;, Courier, monospace;&quot;&gt;&amp;nbsp; &amp;nbsp; -tar c&lt;strong&gt;jvf&lt;/strong&gt; ...&lt;/span&gt;
-            &lt;/div&gt;
-            &lt;div style=&quot;font-family: sans-serif;&quot;&gt;Unzip:&lt;/div&gt;
-            &lt;div style=&quot;font-family: sans-serif;&quot;&gt;&lt;span
-                    style=&quot;font-family: &amp;quot;Courier New&amp;quot;, Courier, monospace;&quot;&gt;&amp;nbsp; &amp;nbsp; -tar x&lt;strong&gt;jvf&lt;/strong&gt; ...&lt;/span&gt;
-            &lt;/div&gt;
-            &lt;div style=&quot;font-family: sans-serif;&quot;&gt;&lt;br/&gt;&lt;/div&gt;
-            &lt;div style=&quot;font-family: sans-serif;&quot;&gt;&lt;br/&gt;&lt;/div&gt;
-            &lt;div style=&quot;font-family: sans-serif;&quot;&gt;&lt;strong&gt;Code Samples:&lt;/strong&gt;&lt;/div&gt;
-            &lt;div style=&quot;font-family: sans-serif;&quot;&gt;&lt;span
-                    style=&quot;font-family: &amp;quot;Courier New&amp;quot;, Courier, monospace;&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp; -tar c&lt;strong&gt;z&lt;/strong&gt;vf testZipFile.&lt;strong&gt;tar.gz&lt;/strong&gt;&amp;nbsp; myDir/&lt;/span&gt;
-            &lt;/div&gt;
-            &lt;div style=&quot;font-family: sans-serif;&quot;&gt;&lt;span
-                    style=&quot;font-family: &amp;quot;Courier New&amp;quot;, Courier, monospace;&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp; -tar x&lt;strong&gt;z&lt;/strong&gt;vf testZipFile.&lt;strong&gt;tar.gz&lt;/strong&gt;&lt;/span&gt;
-            &lt;/div&gt;
-            &lt;div style=&quot;font-family: sans-serif;&quot;&gt;&lt;span
-                    style=&quot;font-family: &amp;quot;Courier New&amp;quot;, Courier, monospace;&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp; -tar c&lt;strong&gt;j&lt;/strong&gt;vf testZipFile.&lt;strong&gt;tar.bz2&lt;/strong&gt; myDir/&lt;/span&gt;
-            &lt;/div&gt;
-            &lt;div style=&quot;font-family: sans-serif;&quot;&gt;&lt;span
-                    style=&quot;font-family: &amp;quot;Courier New&amp;quot;, Courier, monospace;&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp; -tar x&lt;strong&gt;j&lt;/strong&gt;vf testZipFile.&lt;strong&gt;tar.bz2&lt;/strong&gt;&lt;/span&gt;
-            &lt;/div&gt;
-            &lt;strong&gt;&lt;span style=&quot;font-family: Courier New;&quot;&gt;&lt;br/&gt;&lt;/span&gt;&lt;/strong&gt;&lt;br/&gt;&lt;strong&gt;&lt;span
-                style=&quot;font-family: inherit;&quot;&gt;BTW: To simply view what&#39;s in your compressed file&lt;/span&gt;&lt;/strong&gt;&lt;br/&gt;
-            &lt;div style=&quot;font-family: sans-serif;&quot;&gt;&lt;span style=&quot;font-family: Courier New;&quot;&gt;&lt;strong&gt;
-                &amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;/strong&gt;-tar t&lt;strong&gt;z&lt;/strong&gt;vf testZipFile.&lt;strong&gt;tar.gz&lt;/strong&gt;&lt;/span&gt;&lt;/div&gt;
-            &lt;div style=&quot;font-family: sans-serif;&quot;&gt;&lt;span style=&quot;font-family: Courier New;&quot;&gt;&lt;strong&gt;
-                &amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;/strong&gt;-tar t&lt;strong&gt;j&lt;/strong&gt;vf testZipFile.&lt;strong&gt;tar.bz2&lt;/strong&gt;&lt;/span&gt;&lt;/div&gt;
-            &lt;div style=&quot;font-family: sans-serif;&quot;&gt;&lt;br/&gt;&lt;/div&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;</description>
+        <description>&lt;p&gt;Every day I like to learn something new, whether it&amp;#39;s big or small. Sometimes I take time to &amp;quot;relearn&amp;quot;
+    something and understand it in different, simpler ways so I don&amp;#39;t have to remember the small details. You&amp;#39;d be
+    surprised how much faster those small details come back when you know how everything fits together.&lt;/p&gt;
+
+&lt;p&gt;On to what I learned !
+Lately I&amp;#39;ve been experimenting with Linux(again). I installed an Ubunto Distro onto my rig and have been
+learning the command line bit by bit.        &lt;/p&gt;
+
+&lt;p&gt;The tar command
+I&amp;#39;ve been using this command for years but had to google the syntax every single time.
+That ends today !!!
+What is tar?
+- It basically zips/unzips files.
+How to use it?
+- code example:  -tar [putflags here] [newZipFileName.tgz] [directory to zip up]
+- tar [put flags here] [newZipFileName.tgz]&lt;/p&gt;
+
+&lt;p&gt;Small things to know:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;tar has a few flags you always use&lt;/li&gt;
+&lt;li&gt;x =&amp;gt; extract files&lt;/li&gt;
+&lt;li&gt;c =&amp;gt; create archive&lt;/li&gt;
+&lt;li&gt;t =&amp;gt; list files&lt;/li&gt;
+&lt;li&gt;v =&amp;gt; verbose (list files as it processes them)...shows you what&amp;#39;s happening live&lt;/li&gt;
+&lt;li&gt;j =&amp;gt; use bz2 compression&lt;/li&gt;
+&lt;li&gt;z =&amp;gt; use gz compression&lt;/li&gt;
+&lt;li&gt;f =&amp;gt; read or write files to disk&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;How to remember the small things?
+- You always use the same flags to zip/unzip files except for one flag.&lt;/p&gt;
+
+&lt;p&gt;Look at your keyboard. You have z,x,c,v,f in a nice L shape for you. Why did I have you do this?
+    Because your tar command looks like this:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Zip&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;tar czvf ...
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Unzip&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;-tar xzvf ...
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;As I promised same exact command except for the first flag z/x or create/extract LOL
+The &lt;code&gt;z&lt;/code&gt; flag is interchangeable with the &lt;code&gt;j&lt;/code&gt; flag depending on the type of compression you&amp;#39;re working with.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Zip&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;tar cjvf ...
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Unzip&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;tar xjvf ...
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Code Samples&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;tar czvf testZipFile.tar.gz myDir/
+tar xzvf testZipFile.tar.gz
+tar cjvf testZipFile.tar.bz2 myDir/
+tar xjvf testZipFile.tar.bz2
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;BTW: To simply view what&amp;#39;s in your compressed file&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;tar tzvf testZipFile.tar.gz
+tar tjvf testZipFile.tar.bz2
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
         <pubDate>Wed, 12 Aug 2015 08:17:00 -0700</pubDate>
-        <link>http://yourdomain.com/2015/08/12/learning-unix.html</link>
-        <guid isPermaLink="true">http://yourdomain.com/2015/08/12/learning-unix.html</guid>
+        <link>http://yourdomain.com/2015/08/12/the-tar-command.html</link>
+        <guid isPermaLink="true">http://yourdomain.com/2015/08/12/the-tar-command.html</guid>
         
         <category>Unix</category>
         
