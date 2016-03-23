@@ -6,8 +6,8 @@
 </description>
     <link>http://yourdomain.com/</link>
     <atom:link href="http://yourdomain.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 22 Mar 2016 21:11:14 -0400</pubDate>
-    <lastBuildDate>Tue, 22 Mar 2016 21:11:14 -0400</lastBuildDate>
+    <pubDate>Tue, 22 Mar 2016 22:05:53 -0400</pubDate>
+    <lastBuildDate>Tue, 22 Mar 2016 22:05:53 -0400</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
@@ -273,8 +273,8 @@
       <item>
         <title>The tar Command</title>
         <description>&lt;p&gt;Every day I like to learn something new, whether it&amp;#39;s big or small. Sometimes I take time to &amp;quot;relearn&amp;quot;
-    something and understand it in different, simpler ways so I don&amp;#39;t have to remember the small details. You&amp;#39;d be
-    surprised how much faster those small details come back when you know how everything fits together.&lt;/p&gt;
+something and understand it in different, simpler ways so I don&amp;#39;t have to remember the small details. You&amp;#39;d be
+surprised how much faster those small details come back when you know how everything fits together.&lt;/p&gt;
 
 &lt;p&gt;On to what I learned !
 Lately I&amp;#39;ve been experimenting with Linux(again). I installed an Ubunto Distro onto my rig and have been
@@ -283,23 +283,29 @@ learning the command line bit by bit.        &lt;/p&gt;
 &lt;p&gt;The tar command
 I&amp;#39;ve been using this command for years but had to google the syntax every single time.
 That ends today !!!
-What is tar?
-- It basically zips/unzips files.
-How to use it?
-- code example:  -tar [putflags here] [newZipFileName.tgz] [directory to zip up]
-- tar [put flags here] [newZipFileName.tgz]&lt;/p&gt;
-
-&lt;p&gt;Small things to know:&lt;/p&gt;
+What is tar?&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;tar has a few flags you always use&lt;/li&gt;
-&lt;li&gt;x =&amp;gt; extract files&lt;/li&gt;
-&lt;li&gt;c =&amp;gt; create archive&lt;/li&gt;
-&lt;li&gt;t =&amp;gt; list files&lt;/li&gt;
-&lt;li&gt;v =&amp;gt; verbose (list files as it processes them)...shows you what&amp;#39;s happening live&lt;/li&gt;
-&lt;li&gt;j =&amp;gt; use bz2 compression&lt;/li&gt;
-&lt;li&gt;z =&amp;gt; use gz compression&lt;/li&gt;
-&lt;li&gt;f =&amp;gt; read or write files to disk&lt;/li&gt;
+&lt;li&gt;It basically zips/unzips files.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;How to use it?&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;CODE EXAMPLE&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;tar &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;putflags here&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;newZipFileName.tgz&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;directory to zip up&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;
+tar &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;put flags here&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;newZipFileName.tgz&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Small things to know
+tar has a few flags you always use&lt;/p&gt;
+
+&lt;ul class=&quot;mdlist&quot;&gt;
+    &lt;li&gt;x =&gt; extract files&lt;/li&gt;
+    &lt;li&gt;c =&gt; create archive&lt;/li&gt;
+    &lt;li&gt;t =&gt; list files&lt;/li&gt;
+    &lt;li&gt;v =&gt; verbose (list files as it processes them)...shows you what&#39;s happening live&lt;/li&gt;
+    &lt;li&gt;j =&gt; use bz2 compression&lt;/li&gt;
+    &lt;li&gt;z =&gt; use gz compression&lt;/li&gt;
+    &lt;li&gt;f =&gt; read or write files to disk.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;How to remember the small things?

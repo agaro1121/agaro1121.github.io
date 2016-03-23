@@ -13,8 +13,8 @@ blogger_orig_url: http://scarrediron.blogspot.com/2015/08/learning-unix.html
 ---
 
 Every day I like to learn something new, whether it's big or small. Sometimes I take time to "relearn"
-    something and understand it in different, simpler ways so I don't have to remember the small details. You'd be
-    surprised how much faster those small details come back when you know how everything fits together.
+something and understand it in different, simpler ways so I don't have to remember the small details. You'd be
+surprised how much faster those small details come back when you know how everything fits together.
     
 On to what I learned !
 Lately I've been experimenting with Linux(again). I installed an Ubunto Distro onto my rig and have been
@@ -25,21 +25,30 @@ The tar command
 I've been using this command for years but had to google the syntax every single time.
 That ends today !!!
 What is tar?
-- It basically zips/unzips files.
+
+* It basically zips/unzips files.
+
 How to use it?
-- code example:  -tar [putflags here] [newZipFileName.tgz] [directory to zip up]
-- tar [put flags here] [newZipFileName.tgz]
 
-Small things to know:
+**CODE EXAMPLE**
 
-- tar has a few flags you always use
-- x => extract files
-- c => create archive
-- t => list files
-- v => verbose (list files as it processes them)...shows you what's happening live
-- j => use bz2 compression
-- z => use gz compression
-- f => read or write files to disk
+```bash
+tar [putflags here] [newZipFileName.tgz] [directory to zip up]
+tar [put flags here] [newZipFileName.tgz]
+```
+
+Small things to know
+tar has a few flags you always use
+
+<ul class="mdlist">
+    <li>x => extract files</li>
+    <li>c => create archive</li>
+    <li>t => list files</li>
+    <li>v => verbose (list files as it processes them)...shows you what's happening live</li>
+    <li>j => use bz2 compression</li>
+    <li>z => use gz compression</li>
+    <li>f => read or write files to disk.</li>
+</ul>
 
 How to remember the small things?
 - You always use the same flags to zip/unzip files except for one flag.

@@ -295,6 +295,11 @@ select {
   max-width: 100%;
   width: auto; }
 
+.mdlist {
+  list-style-type: disc;
+  margin: 25px;
+  padding: 0; }
+
 ul,
 ol {
   list-style-type: none;
