@@ -6,8 +6,8 @@
 </description>
     <link>http://yourdomain.com/</link>
     <atom:link href="http://yourdomain.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 27 Mar 2016 16:06:26 -0400</pubDate>
-    <lastBuildDate>Sun, 27 Mar 2016 16:06:26 -0400</lastBuildDate>
+    <pubDate>Sun, 27 Mar 2016 17:22:55 -0400</pubDate>
+    <lastBuildDate>Sun, 27 Mar 2016 17:22:55 -0400</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
@@ -39,112 +39,41 @@
     
       <item>
         <title>Brief Sed &amp; Awk</title>
-        <description>Sed&lt;br/&gt;&lt;span style=&quot;font-family: Arial, Helvetica, sans-serif;&quot;&gt;&lt;code
-        style=&quot;background-color: white; font-size: 15px; text-indent: 0.00266667px;&quot;&gt;sed&lt;/code&gt;&lt;a
-        href=&quot;https://www.blogger.com/null&quot; name=&quot;from Stream&quot;
-        style=&quot;background-color: white; color: #e98300; font-size: 15px; text-indent: 0.00266667px; transition: color 0.2s ease-out;&quot;&gt;&lt;/a&gt;&lt;span
-        style=&quot;background-color: white; font-size: 15px; text-indent: 0.00266667px;&quot;&gt;, from Stream EDitor, is a command that is used to perform transformations on text. It works from the command line and processes text via standard in and standard out. It does not modify the original input and does not save the output unless you redirect that output to a file&lt;/span&gt;&lt;/span&gt;
-&lt;br/&gt;&lt;span
-        style=&quot;background-color: white; font-family: verdana, sans-serif; font-size: 15px; text-indent: 0.00266667px;&quot;&gt;&lt;br/&gt;&lt;/span&gt;
-&lt;span style=&quot;background-color: white; font-family: verdana, sans-serif; font-size: 15px; text-indent: 0.00266667px;&quot;&gt;Examples:&lt;/span&gt;
-&lt;br/&gt;&lt;span class=&quot;epub__EmpStrong&quot;
-           style=&quot;background-color: white; font-family: &#39;Courier New Bold&#39;, monospace; font-size: 13.2px; font-weight: bold;&quot;&gt;sed&lt;/span&gt;
-&lt;span style=&quot;background-color: white; font-family: &#39;Courier New&#39;, monospace; font-size: 13.2px;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;span
-        class=&quot;epub__BoldItalic&quot;
-        style=&quot;background-color: white; font-family: &#39;Courier New Bold Italic&#39;, monospace; font-size: 13.2px; font-style: italic; font-weight: bold;&quot;&gt;sedcommand inputfile&amp;nbsp;&lt;/span&gt;
-&lt;br/&gt;&lt;span class=&quot;epub__BoldItalic&quot;
-           style=&quot;background-color: white; font-size: 13.2px; font-style: italic; font-weight: bold;&quot;&gt;&lt;span
-        class=&quot;epub__EmpStrong&quot;
-        style=&quot;font-family: &#39;Courier New Bold&#39;, monospace; font-size: 13.2px; font-style: normal;&quot;&gt;sed -e&lt;/span&gt;&lt;span
-        style=&quot;font-family: &#39;Courier New&#39;, monospace; font-size: 13.2px; font-style: normal; font-weight: normal;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;span
-        class=&quot;epub__BoldItalic&quot; style=&quot;font-size: 13.2px;&quot;&gt;&lt;span
-        style=&quot;font-family: Courier New Bold Italic, monospace;&quot;&gt;sedcommand inputfile &lt;/span&gt;&lt;span
-        style=&quot;font-family: Arial, Helvetica, sans-serif;&quot;&gt;#&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span
-        style=&quot;background-color: white; font-size: 15px; text-indent: 0.00266667px;&quot;&gt;&lt;span
-        style=&quot;font-family: Arial, Helvetica, sans-serif;&quot;&gt;does the same thing as above, except that it specifically denotes the command to run&lt;/span&gt;&lt;/span&gt;
-&lt;br/&gt;&lt;span class=&quot;epub__BoldItalic&quot;
-           style=&quot;background-color: white; font-family: &#39;Courier New Bold Italic&#39;, monospace; font-size: 13.2px; font-style: italic; font-weight: bold;&quot;&gt;&lt;span
-        class=&quot;epub__BoldItalic&quot; style=&quot;font-size: 13.2px;&quot;&gt;&lt;span class=&quot;epub__EmpStrong&quot;
-                                                                  style=&quot;font-family: &#39;Courier New Bold&#39;, monospace; font-size: 13.2px; font-style: normal;&quot;&gt;sed -e&lt;/span&gt;&lt;span
-        style=&quot;font-family: &#39;Courier New&#39;, monospace; font-size: 13.2px; font-style: normal; font-weight: normal;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;span
-        class=&quot;epub__BoldItalic&quot;
-        style=&quot;font-size: 13.2px;&quot;&gt;sedcommand -e anothersedcommand inputfile&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br/&gt;&lt;span
-        class=&quot;epub__BoldItalic&quot;
-        style=&quot;background-color: white; font-size: 13.2px; font-style: italic; font-weight: bold;&quot;&gt;&lt;span
-        class=&quot;epub__BoldItalic&quot; style=&quot;font-size: 13.2px;&quot;&gt;&lt;span class=&quot;epub__BoldItalic&quot;
-                                                                  style=&quot;font-size: 13.2px;&quot;&gt;&lt;span
-        style=&quot;font-family: Arial, Helvetica, sans-serif;&quot;&gt;&lt;br/&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span
-        class=&quot;epub__BoldItalic&quot;
-        style=&quot;background-color: white; font-size: 13.2px; font-style: italic; font-weight: bold;&quot;&gt;&lt;span
-        class=&quot;epub__BoldItalic&quot; style=&quot;font-size: 13.2px;&quot;&gt;&lt;span class=&quot;epub__BoldItalic&quot;
-                                                                  style=&quot;font-size: 13.2px;&quot;&gt;&lt;span
-        style=&quot;font-family: Arial, Helvetica, sans-serif;&quot;&gt;&lt;span
-        style=&quot;font-size: 15px; font-style: normal; font-weight: normal; text-indent: 0.00266667px;&quot;&gt;Let’s say I want to change every instance of&amp;nbsp;&lt;/span&gt;&lt;em
-        style=&quot;font-size: 15px; font-weight: normal; text-indent: 0.00266667px;&quot;&gt;camel&lt;/em&gt;&lt;span
-        style=&quot;font-size: 15px; font-style: normal; font-weight: normal; text-indent: 0.00266667px;&quot;&gt;&amp;nbsp;in the text file transportation.txt to&amp;nbsp;&lt;/span&gt;&lt;em
-        style=&quot;font-size: 15px; font-weight: normal; text-indent: 0.00266667px;&quot;&gt;dune buggy&lt;/em&gt;&lt;span
-        style=&quot;font-size: 15px; font-style: normal; font-weight: normal; text-indent: 0.00266667px;&quot;&gt;. Here is how to do that:&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
-&lt;br/&gt;&lt;span class=&quot;epub__BoldItalic&quot;
-           style=&quot;background-color: white; font-family: &#39;Courier New Bold Italic&#39;, monospace; font-size: 13.2px; font-style: italic; font-weight: bold;&quot;&gt;&lt;span
-        class=&quot;epub__BoldItalic&quot; style=&quot;font-size: 13.2px;&quot;&gt;&lt;span class=&quot;epub__BoldItalic&quot;
-                                                                  style=&quot;font-size: 13.2px;&quot;&gt;&lt;span
-        style=&quot;font-family: &#39;Courier New Bold&#39;, monospace; font-size: 13.2px; font-style: normal;&quot;&gt;sed -e &#39;s/camel/dune buggy/g&#39; transportation.txt&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
-&lt;br/&gt;&lt;span class=&quot;epub__BoldItalic&quot;
-           style=&quot;background-color: white; font-family: &#39;Courier New Bold Italic&#39;, monospace; font-size: 13.2px; font-style: italic; font-weight: bold;&quot;&gt;&lt;span
-        class=&quot;epub__BoldItalic&quot; style=&quot;font-size: 13.2px;&quot;&gt;&lt;span class=&quot;epub__BoldItalic&quot;
-                                                                  style=&quot;font-size: 13.2px;&quot;&gt;&lt;span
-        style=&quot;font-family: &#39;Courier New Bold&#39;, monospace; font-size: 13.2px; font-style: normal;&quot;&gt;s=substitute&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
-&lt;br/&gt;&lt;span class=&quot;epub__BoldItalic&quot;
-           style=&quot;background-color: white; font-family: &#39;Courier New Bold Italic&#39;, monospace; font-size: 13.2px; font-style: italic; font-weight: bold;&quot;&gt;&lt;span
-        class=&quot;epub__BoldItalic&quot; style=&quot;font-size: 13.2px;&quot;&gt;&lt;span class=&quot;epub__BoldItalic&quot;
-                                                                  style=&quot;font-size: 13.2px;&quot;&gt;&lt;span
-        style=&quot;font-family: &#39;Courier New Bold&#39;, monospace; font-size: 13.2px; font-style: normal;&quot;&gt;g=global(everywhere in the file)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
-&lt;br/&gt;&lt;span class=&quot;epub__BoldItalic&quot;
-           style=&quot;background-color: white; font-family: &#39;Courier New Bold Italic&#39;, monospace; font-size: 13.2px; font-style: italic; font-weight: bold;&quot;&gt;&lt;span
-        class=&quot;epub__BoldItalic&quot; style=&quot;font-size: 13.2px;&quot;&gt;&lt;span class=&quot;epub__BoldItalic&quot;
-                                                                  style=&quot;font-size: 13.2px;&quot;&gt;&lt;span
-        style=&quot;font-family: &#39;Courier New Bold&#39;, monospace; font-size: 13.2px; font-style: normal;&quot;&gt;&lt;br/&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;epub__BoldItalic&quot;
-      style=&quot;background-color: white; font-size: 13.2px; font-style: italic; font-weight: bold;&quot;&gt;&lt;span
-        class=&quot;epub__BoldItalic&quot; style=&quot;font-size: 13.2px;&quot;&gt;&lt;span class=&quot;epub__BoldItalic&quot;
-                                                                  style=&quot;font-size: 13.2px;&quot;&gt;&lt;span
-        style=&quot;font-size: 15px; font-style: normal; font-weight: normal; text-indent: 0.00266667px;&quot;&gt;&lt;span
-        style=&quot;font-family: Arial, Helvetica, sans-serif;&quot;&gt;If I wanted to delete lines 4 through 17 in the file longtext.txt, I would do this:&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
-&lt;br/&gt;&lt;span class=&quot;epub__BoldItalic&quot;
-           style=&quot;background-color: white; font-family: &#39;Courier New Bold Italic&#39;, monospace; font-size: 13.2px; font-style: italic; font-weight: bold;&quot;&gt;&lt;span
-        class=&quot;epub__BoldItalic&quot; style=&quot;font-size: 13.2px;&quot;&gt;&lt;span class=&quot;epub__BoldItalic&quot;
-                                                                  style=&quot;font-size: 13.2px;&quot;&gt;&lt;span
-        style=&quot;font-family: &#39;Courier New Bold&#39;, monospace; font-size: 13.2px; font-style: normal;&quot;&gt;sed -e &#39;4,17d&#39; longtext.txt&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
-&lt;br/&gt;&lt;span class=&quot;epub__BoldItalic&quot;
-           style=&quot;background-color: white; font-family: &#39;Courier New Bold Italic&#39;, monospace; font-size: 13.2px; font-style: italic; font-weight: bold;&quot;&gt;&lt;span
-        class=&quot;epub__BoldItalic&quot; style=&quot;font-size: 13.2px;&quot;&gt;&lt;span class=&quot;epub__BoldItalic&quot;
-                                                                  style=&quot;font-size: 13.2px;&quot;&gt;&lt;span
-        style=&quot;font-family: &#39;Courier New Bold&#39;, monospace; font-size: 13.2px; font-style: normal;&quot;&gt;&lt;br/&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
-&lt;span style=&quot;font-family: Arial, Helvetica, sans-serif;&quot;&gt;You can use other things in place of the line numbers such as regex&lt;/span&gt;
-&lt;br/&gt;&lt;br/&gt;&lt;span style=&quot;font-family: Arial, Helvetica, sans-serif;&quot;&gt;Awk&lt;/span&gt;&lt;br/&gt;&lt;span
-        style=&quot;font-family: Arial, Helvetica, sans-serif;&quot;&gt;&lt;span
-        style=&quot;background-color: white; font-size: 15px; text-indent: 0.00266667px;&quot;&gt;A&lt;/span&gt;&lt;span
-        style=&quot;background-color: white; font-size: 15px; text-indent: 0.00266667px;&quot;&gt; small programming language for processing strings. It takes in text, transforms it in whatever way you tell it to, and then outputs the transformed text&lt;/span&gt;&lt;/span&gt;
-&lt;br/&gt;&lt;span style=&quot;background-color: white; font-size: 15px; text-indent: 0.00266667px;&quot;&gt;&lt;span
-        style=&quot;font-family: Arial, Helvetica, sans-serif;&quot;&gt;&lt;br/&gt;&lt;/span&gt;&lt;/span&gt;&lt;span
-        style=&quot;font-family: Arial, Helvetica, sans-serif;&quot;&gt;&lt;span
-        style=&quot;background-color: white; font-size: 15px; text-indent: 0.00266667px;&quot;&gt;The most common use of&amp;nbsp;&lt;/span&gt;&lt;code
-        style=&quot;background-color: white; font-size: 15px; text-indent: 0.00266667px;&quot;&gt;awk&lt;/code&gt;&lt;a
-        href=&quot;https://www.blogger.com/null&quot; name=&quot;such as&quot;
-        style=&quot;background-color: white; color: #e98300; font-size: 15px; text-indent: 0.00266667px; transition: color 0.2s ease-out;&quot;&gt;&lt;/a&gt;&lt;span
-        style=&quot;background-color: white; font-size: 15px; text-indent: 0.00266667px;&quot;&gt;&amp;nbsp;is to manipulate files that consist of fields separated by delimiters, such as a comma separated values (CSV) or configuration file&lt;/span&gt;&lt;/span&gt;
-&lt;br/&gt;&lt;span style=&quot;background-color: white; font-size: 15px; text-indent: 0.00266667px;&quot;&gt;&lt;span
-        style=&quot;font-family: Arial, Helvetica, sans-serif;&quot;&gt;&lt;br/&gt;&lt;/span&gt;&lt;/span&gt;&lt;span
-        style=&quot;background-color: white; font-size: 15px; text-indent: 0.00266667px;&quot;&gt;&lt;span
-        style=&quot;font-family: Arial, Helvetica, sans-serif;&quot;&gt;What if we had a comma-delimited file containing names of things on my desk, a category for each, a color for each, and a date corresponding to the last time I picked that item up. That is 4 columns: name, category, color, and date. If I only really cared about the names and dates, then I could use awk to process the file quickly and list just these for me, like this:&lt;/span&gt;&lt;/span&gt;
-&lt;br/&gt;&lt;span
-        style=&quot;background-color: white; font-family: &#39;Courier New Bold&#39;, monospace; font-size: 0.88em; font-weight: bold;&quot;&gt;&lt;br/&gt;&lt;/span&gt;
-&lt;span style=&quot;background-color: white; font-family: &#39;Courier New Bold&#39;, monospace; font-size: 0.88em; font-weight: bold;&quot;&gt;awk -F&#39;,&#39; &#39;{print $1, &quot;was last picked up on&quot;, $4}&#39; deskstuff.txt&lt;/span&gt;
-&lt;br/&gt;&lt;span
-        style=&quot;background-color: white; font-family: &#39;Courier New Bold&#39;, monospace; font-size: 0.88em; font-weight: bold;&quot;&gt;-F defines the delimeter(&#39;,&#39;)&lt;/span&gt;
-&lt;br/&gt;&lt;span
-        style=&quot;background-color: white; font-family: &#39;Courier New Bold&#39;, monospace; font-size: 0.88em; font-weight: bold;&quot;&gt;You can define multiple delimiters:&amp;nbsp;&lt;/span&gt;
-&lt;span style=&quot;background-color: white; font-family: &#39;courier New&#39;, monospace; font-size: 15px; text-indent: 0.00266667px;&quot;&gt;-F&#39;[;,-]&#39;&lt;/span&gt;</description>
+        <description>&lt;p&gt;Sed &lt;/p&gt;
+
+&lt;p&gt;sed,from Stream EDitor, is a command that is used to perform transformations on text. It works from the command line and processes text via standard in and standard out. It does not modify the original input and does not save the output unless you redirect that output to a file&lt;/p&gt;
+
+&lt;p&gt;Examples:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;sed sedcommand inputfile
+sed -e sedcommand inputfile &lt;span class=&quot;c&quot;&gt;#does the same thing as above, except that it specifically denotes the command to run&lt;/span&gt;
+sed -e sedcommand -e anothersedcommand inputfile
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Let’s say I want to change every instance of camel in the text file transportation.txt todune buggy.
+Here is how to do that:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;sed -e &lt;span class=&quot;s1&quot;&gt;&amp;#39;s/camel/dune buggy/g&amp;#39;&lt;/span&gt; transportation.txt
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;s=substitute
+g=global(everywhere in the file)&lt;/p&gt;
+
+&lt;p&gt;If I wanted to delete lines 4 through 17 in the file longtext.txt, I would do this:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;sed -e &lt;span class=&quot;s1&quot;&gt;&amp;#39;4,17d&amp;#39;&lt;/span&gt; longtext.txt
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;You can use other things in place of the line numbers such as regex&lt;/p&gt;
+
+&lt;p&gt;Awk
+A small programming language for processing strings. It takes in text, transforms it in whatever way you tell it to, and then outputs the transformed text.
+The most common use of awk is to manipulate files that consist of fields separated by delimiters, such as a comma separated values (CSV) or a configuration file.&lt;/p&gt;
+
+&lt;p&gt;What if we had a comma-delimited file containing names of things on my desk, a category for each, a color for each, and a date corresponding to the last time I picked that item up. 
+That is 4 columns: name, category, color, and date. 
+If I only really cared about the names and dates, then I could use awk to process the file quickly and list just these for me, like this:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;awk -F&lt;span class=&quot;s1&quot;&gt;&amp;#39;,&amp;#39;&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;{print $1, &amp;quot;was last picked up on&amp;quot;, $4}&amp;#39;&lt;/span&gt; deskstuff.txt
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;-F defines the delimeter(&amp;#39;,&amp;#39;)&lt;/p&gt;
+
+&lt;p&gt;You can define multiple delimiters:
+-F&amp;#39;[;,-]&amp;#39;&lt;/p&gt;
+</description>
         <pubDate>Sun, 28 Feb 2016 16:04:00 -0800</pubDate>
         <link>http://yourdomain.com/2016/02/28/brief-sed-awk.html</link>
         <guid isPermaLink="true">http://yourdomain.com/2016/02/28/brief-sed-awk.html</guid>
