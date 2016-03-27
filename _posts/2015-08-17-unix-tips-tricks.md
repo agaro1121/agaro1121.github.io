@@ -29,13 +29,13 @@ For example:
 
 sudo !! will run sudo echo "Saluton Mondo"
 
-!*(bang star) - This is a tricky one. This one will print out the last thing terminal spit out.
+!(bang star) - This is a tricky one. This one will print out the last thing terminal spit out.
 The below command will allow you nano the file from the ls command.
 
 ```bash
 Hierro > ls testFile2.txt
 testFile2.txt
-Hierro > nano !*
+Hierro > nano !
 nano testFile2.txt
 ```
 
@@ -44,18 +44,19 @@ Used alone, it will print out the last thing in the terminal and use it as a com
 ```bash
     Hierro > echo "echo"
     echo
-    Hierro > !* "hello"
+    Hierro > ! "hello"
     "echo" "hello"
     hello
 ```
 
-
-Ctrl+U  #erase the entire line
-Ctrl+W  #erase word by word
-Ctrl+A  #move your cursor to the beginning of the line
-Ctrl+E  #move your cursor to the end of the line
-Ctrl+K  #erase everything to the right of your cursor’s position
-Ctrl+Y  #restore something you just deleted, but shouldn’t have
+<ul class="mdlist">
+    <li>Ctrl+U  #erase the entire line</li>
+    <li>Ctrl+W  #erase word by word</li>
+    <li>Ctrl+A  #move your cursor to the beginning of the line</li>
+    <li>Ctrl+E  #move your cursor to the end of the line</li>
+    <li>Ctrl+K  #erase everything to the right of your cursor’s position</li>
+    <li>Ctrl+Y  #restore something you just deleted</li>
+</ul>
 
 Chaining terminal commands:
 
@@ -65,19 +66,15 @@ command1 && command2 # Runs command2 ONLY IF command1 runs successfully
 command1 || command2 # Runs command2 ONLY IF command1 runs unsuccessfully
 ```
 
-If your system crashes: REISUB
-        to the rescuen hold PrtSc+Alt and press REISUB
-        in that order slowly>nbsp;
-        unRaw—Takes control of the keyboard back from the X server.
+If your system crashes: REISUB to the rescue: 
 
-        tErminate
-—Sends a SIGTERM command to all processes, which allows time for the processes to terminate gracefully.
+hold PrtSc+Alt and press REISUB in that order slowly
 
-        kIll
-—Sends a SIGKILL to all processes, forcing any still running to terminate immediately.
-
-        Sync—Flush data from memory to disk.
-
-        Unmount—Unmount and remount all filesystems as read only.
-
-        reBoot—Turn off and back on again, restarting the computer.
+<ul class="mdlist">
+    <li>R -> unRaw      —> Takes control of the keyboard back from the X server.</li>
+    <li>E -> tErminate  —> Sends a SIGTERM command to all processes, which allows time for the processes to terminate gracefully.</li>
+    <li>I -> kIll       —> Sends a SIGKILL to all processes, forcing any still running to terminate immediately.</li>
+    <li>S -> Sync       —> Flush data from memory to disk.</li>
+    <li>U -> Unmount    —> Unmount and remount all filesystems as read only.</li>
+    <li>B -> reBoot     —> Turn off and back on again, restarting the computer.</li>
+</ul>
