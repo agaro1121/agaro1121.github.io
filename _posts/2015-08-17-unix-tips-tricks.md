@@ -27,11 +27,16 @@ Saluton Mondo
 ```
 
 You can even combine it with other commands.
+
 For example:
 
-sudo !! will run sudo echo "Saluton Mondo"
+```bash
+> sudo !! #will run sudo 
+sudo echo "Saluton Mondo"
+Saluton Mondo
+```
 
-!(bang star) - This is a tricky one. This one will print out the last thing terminal spit out.
+!*(bang star) - This is a tricky one. This one will print out the last thing terminal spit out.
 The below command will allow you nano the file from the ls command.
 
 ```bash
