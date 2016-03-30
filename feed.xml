@@ -6,8 +6,8 @@
 </description>
     <link>http://yourdomain.com/</link>
     <atom:link href="http://yourdomain.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 27 Mar 2016 17:24:51 -0400</pubDate>
-    <lastBuildDate>Sun, 27 Mar 2016 17:24:51 -0400</lastBuildDate>
+    <pubDate>Tue, 29 Mar 2016 21:20:58 -0400</pubDate>
+    <lastBuildDate>Tue, 29 Mar 2016 21:20:58 -0400</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
@@ -87,8 +87,9 @@ If I only really cared about the names and dates, then I could use awk to proces
     
       <item>
         <title>Unix Command Line Tips &amp; Tricks</title>
-        <description>&lt;p&gt;Below are some handy command line tips and tricks.You can read the rest with &amp;quot;Ubuntu Unleashed 2015 Edition&amp;quot;
-!! - Run last command&lt;/p&gt;
+        <description>&lt;p&gt;Below are some handy command line tips and tricks.You can read the rest with &amp;quot;Ubuntu Unleashed 2015 Edition&amp;quot;&lt;/p&gt;
+
+&lt;p&gt;!! - Run last command&lt;/p&gt;
 
 &lt;p&gt;For Example:&lt;/p&gt;
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;Hierro &amp;gt; &lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;Saluton Mondo&amp;quot;&lt;/span&gt;
@@ -105,13 +106,13 @@ For example:&lt;/p&gt;
 The below command will allow you nano the file from the ls command.&lt;/p&gt;
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;Hierro &amp;gt; ls testFile2.txt
 testFile2.txt
-Hierro &amp;gt; nano !
+Hierro &amp;gt; nano !*
 nano testFile2.txt
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Used alone, it will print out the last thing in the terminal and use it as a command like below&lt;/p&gt;
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;    Hierro &amp;gt; &lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;echo&amp;quot;&lt;/span&gt;
     &lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt;
-&lt;span class=&quot;nb&quot;&gt;    &lt;/span&gt;Hierro &amp;gt; ! &lt;span class=&quot;s2&quot;&gt;&amp;quot;hello&amp;quot;&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;    &lt;/span&gt;Hierro &amp;gt; !* &lt;span class=&quot;s2&quot;&gt;&amp;quot;hello&amp;quot;&lt;/span&gt;
     &lt;span class=&quot;s2&quot;&gt;&amp;quot;echo&amp;quot;&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;hello&amp;quot;&lt;/span&gt;
     hello
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
