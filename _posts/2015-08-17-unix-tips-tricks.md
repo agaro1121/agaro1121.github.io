@@ -21,7 +21,8 @@ For Example:
 ```bash
 Hierro > echo "Saluton Mondo"
 Saluton Mondo
-Hierro > !!echo "Saluton Mondo"
+Hierro > !!
+echo "Saluton Mondo"
 Saluton Mondo
 ```
 
@@ -43,11 +44,11 @@ nano testFile2.txt
 Used alone, it will print out the last thing in the terminal and use it as a command like below
 
 ```bash
-    Hierro > echo "echo"
-    echo
-    Hierro > !* "hello"
-    "echo" "hello"
-    hello
+Hierro > echo "echo"
+echo
+Hierro > !* "hello"
+"echo" "hello"
+hello
 ```
 
 <ul class="mdlist">
