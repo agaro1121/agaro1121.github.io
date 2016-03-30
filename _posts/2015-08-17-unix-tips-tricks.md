@@ -13,6 +13,7 @@ blogger_orig_url: http://scarrediron.blogspot.com/2015/08/unix-tips-tricks.html
 ---
 
 Below are some handy command line tips and tricks.You can read the rest with "Ubuntu Unleashed 2015 Edition"
+
 !! - Run last command
 
 For Example:
@@ -35,7 +36,7 @@ The below command will allow you nano the file from the ls command.
 ```bash
 Hierro > ls testFile2.txt
 testFile2.txt
-Hierro > nano !
+Hierro > nano !*
 nano testFile2.txt
 ```
 
@@ -44,7 +45,7 @@ Used alone, it will print out the last thing in the terminal and use it as a com
 ```bash
     Hierro > echo "echo"
     echo
-    Hierro > ! "hello"
+    Hierro > !* "hello"
     "echo" "hello"
     hello
 ```
