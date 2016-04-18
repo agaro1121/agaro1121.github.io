@@ -1,0 +1,30 @@
+---
+layout: post
+title: Variance
+date: '2016-04-17T07:17:00.003-05:00'
+author: Anthony Garo
+tags:
+- scala
+- Code
+---
+
+Hi everyone. I'm back with another one of my posts :-)
+
+Today I want to write about a topic that isn't new but is still interesting, Variance.
+
+There are three(3) types of Variance. I'll go over the three of them below with examples.
+
+Covariant
+Contravariant
+Invariant
+
+TODO:
+- what is variance
+- use cases
+- define terms
+- how it relates to java array issues
+- how it relates to polymorphism
+- how it relates to scala type classes?
+
+Examples:
+- Parent, child, grandchild

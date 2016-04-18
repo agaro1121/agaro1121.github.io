@@ -33,7 +33,7 @@ scala>
 For those of you who don't know Functional Programming or are starting to use it now, you're in for a treat :-)
 
 Map and FlatMap usually come bundled with Monads.
-Monads are specific to functional programming. A Monad is not a type but more of a construct.
+Monads originated with functional programming(or so I think). A Monad is not a type but more of a construct.
 Many different objects in scala are Monads out of the box because they follow the Monad laws.
 Lists, Options, and Futures are great examples of Monads in Scala. To put it simply, a Monad is a container with some stuff in it.
 The Monad gives you the ability to perform operations on the stuff while it's in the container. Once you're done  operating on your stuff, you can unwrap the Monad and get your result. Whether it succeeded or not.
